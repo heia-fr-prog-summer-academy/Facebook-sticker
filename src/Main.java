@@ -23,7 +23,7 @@ public class Main {
                     System.out.println("Impossible!");
                     return;
                 }
-                int c = (int)((double)Math.ceil(messageLetters[i] / (double)stickerLetters[i]));
+                int c = (messageLetters[i] + stickerLetters[i] - 1)/ stickerLetters[i];
                 if (c > count) {
                     count = c;
                 }
